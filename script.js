@@ -74,6 +74,8 @@ document.addEventListener("mousemove", (e) => {
 
 });
 
+
+function createSpecialHeart(){
 const wrapper = document.createElement("div");
 
 wrapper.classList.add("specialWrapper");
@@ -89,16 +91,20 @@ wrapper.appendChild(specialHeart);
 wrapper.style.left = "50vw";
 
 document.body.appendChild(wrapper);
-
-
-
-const letter = document.getElementById("letter");
-
 specialHeart.addEventListener("click", ()=>{
 
     letter.style.display="flex";
 
 });
+
+}
+
+setTimeout(createSpecialHeart, 6000);
+
+
+const letter = document.getElementById("letter");
+
+
 
 
 
